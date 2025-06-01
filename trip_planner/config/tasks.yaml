@@ -1,0 +1,79 @@
+itinerary_planner_task:
+  description: >
+    Create a detailed itinerary for a trip to {destination}
+    Make sure the itinerary includes activities that cater to the {interests} of the travelers.
+  expected_output: >
+    A day-by-day itinerary for a {no_of_days}-day trip to {destination} for {no_of_people} people.
+    Include activities such as {interests} and make sure to stay within the budget of {budget}.
+  agent: itinerary_planner_agent
+
+accommodation_finder_task:
+  description: >
+    Find suitable accommodations for the trip to {destination}
+    Make sure the accommodations are within the {budget} and meet the preferences of the travelers.
+  expected_output: >
+    A list of accommodations in {destination} that are within the budget of {budget} and meet the {interests} of the travelers.
+  agent: accommodation_finder_agent
+
+budget_management_task:
+  description: >
+    Manage the budget for the trip to {destination}
+    Make sure to keep track of expenses and find cost-effective solutions to stay within the budget of {budget}.
+  expected_output: >
+    A budget breakdown for the trip to {destination} showing the expenses for each category and the total cost.
+  agent: budget_management_agent
+
+activity_recommendation_task:
+  description: >
+    Recommend activities for the trip to {destination}
+    Provide a list of activities that cater to the interests of the travelers and are within the budget.
+  expected_output: >
+    A list of recommended activities in {destination} that cater to the {interests} of the travelers and are within the budget of {budget}.
+  agent: activity_recommendation_agent
+
+transportation_optimization_task:
+  description: >
+    Optimize transportation for the trip to {destination}
+    Find the most cost-effective and efficient transportation options for the travelers.
+  expected_output: >
+    A transportation plan for the trip to {destination} showing the routes, modes of transportation, and costs.
+  agent: transportation_optimization_agent
+
+local_expert_ai_task:
+  description: >
+    Provide local expertise for the trip to {destination}
+    Share insights, tips, and recommendations to enhance the travelers' experience.
+  expected_output: >
+    Local insights, tips, and recommendations for the trip to {destination} to help the travelers make the most of their visit.
+  agent: local_expert_ai_agent
+
+weather_conditions_monitoring_task:
+  description: >
+    Monitor weather and conditions for the trip to {destination}
+    Keep track of weather forecasts and any conditions that may affect the travelers' plans.
+  expected_output: >
+    Weather forecasts and conditions updates for the trip to {destination} to help the travelers prepare and adjust their plans accordingly.
+  agent: weather_and_conditions_monitoring_agent
+
+flight_task:
+  description: >
+    Book flights for the trip to {destination} from {state}
+    Find the best flight options that fit within the budget and schedule of the travelers.
+  expected_output: >
+    give a prompt so that I can give it to browser_use in the format of
+    "Open https://www.google.com/travel/flights.  
+     Wait for the page to load completely.
+     
+     1. Click on the "Round trip" option (if not already selected).
+     2. Click the "From" input field. Clear any existing text. Type "{state}" and select the correct suggestion from the dropdown.
+     3. Click the "To" input field. Clear any existing text. Type "{destination}" and select the correct suggestion from the dropdown.
+     4. Click the "Departure date" field. Choose the date "{date}".
+     5. For the return date, calculate the return date as {date} + {no_of_days} and select that date in the calendar.
+     6. Click on the "Travelers" option. Set the number of adults to "{no_of_people}".
+     7. Click the "Done" or "Search" button to initiate the flight search.
+     8. Wait for the results to load. Scrape the top 5 flight results including:
+        - Airline name
+        - Departure and arrival times
+        - Total duration
+        - Price
+  agent: flight_agent

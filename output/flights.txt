@@ -1,0 +1,15 @@
+Open https://www.google.com/travel/flights.  
+ Wait for the page to load completely.
+ 
+ 1. Click on the "Round trip" option (if not already selected).
+ 2. Click the "From" input field. Clear any existing text. Type "tokyo" and select the correct suggestion from the dropdown.
+ 3. Click the "To" input field. Clear any existing text. Type "japan" and select the correct suggestion from the dropdown.  (Note: This will likely require specifying a destination city within Japan, as "Japan" is too broad.  The traveler should choose a city convenient for their Hakone trip, such as Odawara or a major airport like Narita (NRT) or Haneda (HND)).
+ 4. Click the "Departure date" field. Choose the date "2025-5-31".
+ 5. For the return date, calculate the return date as 2025-5-31 + 3 and select that date in the calendar (June 3, 2025).
+ 6. Click on the "Travelers" option. Set the number of adults to "4".
+ 7. Click the "Done" or "Search" button to initiate the flight search.
+ 8. Wait for the results to load. Scrape the top 5 flight results including:
+    - Airline name
+    - Departure and arrival times
+    - Total duration
+    - Price

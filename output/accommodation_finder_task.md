@@ -1,0 +1,1 @@
+I need more information to provide a complete list of suitable accommodations.  My search suggests several promising options (Guesthouse Azito, Manten No Hoshi Hotel, Posada Suimei, and others listed on TripAdvisor, Agoda, and Booking.com), but I cannot access and verify pricing and amenities to ensure they meet the budget and preferences without additional tools.
